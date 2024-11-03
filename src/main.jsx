@@ -9,12 +9,12 @@ import ThemeProvider from "./routes/ThemeContext.jsx"
 
 
 const router = createBrowserRouter([{
-  path:"/",
+  path:"/countries/",
   element: <Root/>,
   errorElement: <ErrorPage/>, 
 },
 {
-  path:"moreinfos/:moreinfoid",
+  path:"/countries/moreinfos/:moreinfoid",
   element: <MoreInfo/>
 }
 

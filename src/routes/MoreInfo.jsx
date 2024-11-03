@@ -19,7 +19,7 @@ export default function MoreInfo() {
         
        />
        <section className={`transition-all duration-300 ease-in flex flex-col ${theme.bg}  w-full lg:mx-auto lg:mt-[4.5%] mt-[15%] h-[100vh] `}>
-        <button className={`ml-[5.5%] mt-11 mb-10 w-[100px] lg:h-[40px] h-[50px] rounded-md shadow-md ${theme.txt}`}><Link  to="/">back</Link></button>
+        <button className={`ml-[5.5%] mt-11 mb-10 w-[100px] lg:h-[40px] h-[50px] rounded-md shadow-md ${theme.txt}`}><Link  to="/countries/">back</Link></button>
         <div className="lg:w-[89%] w-full mt-5 mx-auto flex flex-col lg:flex-row  lg:h-[65%] h-full justify-between ">
         <img className="lg:w-[45%] w-[90%] mx-auto" src={item.flags.svg} alt={`${item.name} flag`} />
         <div className="lg:w-1/2 flex w-full   items-center lg:justify-center h-full">

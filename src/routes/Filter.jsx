@@ -38,7 +38,6 @@ export default function Filter({data,setIsData}) {
     <div className="relative transition-all bg-red duration-300 lg:h-[60px] h-full w-[95%] mx-auto flex lg:flex-row flex-col gap-4 justify-between lg:mt-[7%] mt-[30%] ">
       <svg className="absolute top-4 left-4 lg:top-6 lg:left-8" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path></svg>
       <Input
-       type="search"
        placeholder="Search for a country..."
        data={newData}
        prevData={data}
@@ -63,7 +62,7 @@ export default function Filter({data,setIsData}) {
   )
 }
 
-function Input({ type, placeholder, data, prevData, isChange, setIsData,theme }) {
+function Input({  placeholder, data, prevData, isChange, setIsData,theme }) {
   function change(e) {
       console.log(e.target.value == "")
       const it = data.filter(item => {
@@ -71,6 +70,6 @@ function Input({ type, placeholder, data, prevData, isChange, setIsData,theme })
       })
       e.target.value == "" ? setIsData(data2) : setIsData(it)
   }
-    return <input onChange={change}  className={` ${theme.sbg} pl-[12%] lg:pl-[6%] pr-3 lg:h-full h-[40%] lg:w-[40%] w-full placeholder:text-lightModeInput lg:rounded-sm  shadow-md ${theme.inp}`} placeholder:text-lg pl-10 type={type} name="" placeholder="Search for a country..."
+    return <input onChange={change}  className={` ${theme.sbg} pl-[12%] lg:pl-[6%] pr-3 lg:h-full h-[40%] lg:w-[40%] w-full placeholder:text-lightModeInput lg:rounded-sm  shadow-md ${theme.inp}`} placeholder:text-lg pl-10 type="text" name="" placeholder="Search for a country..."
     />
 }

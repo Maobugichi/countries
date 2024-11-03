@@ -13,7 +13,7 @@ const App = () => {
     <HashRouter>
       <Routes>
         <Route path="/" element={<Root />} />
-        <Route path="/countries/moreinfos/:moreinfoid" element={<MoreInfo />} />
+        <Route path="/moreinfos/:moreinfoid" element={<MoreInfo />} />
       </Routes>
     </HashRouter>
   );

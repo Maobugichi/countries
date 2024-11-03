@@ -22,8 +22,7 @@ export default function Root() {
   },[])
 
     return(
-      
-        <div className={`overflow-x-hidden transition-all duration-300 bg- ${theme.bg} h-auto min-h-[200vh] `}>
+        <div className={`font-custom-font overflow-x-hidden transition-all duration-300 bg- ${theme.bg} h-auto min-h-[200vh] `}>
          <header className="lg:h-[150px]  h-[250px] flex flex-col justify-between w-full mx-auto ">
           <Nav
           />

@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+     "custom-font": ("Nunito Sans", "sans-serif")
+    },
     colors: {
      "darkModeElements": "hsl(209, 23%, 22%)",
      "darkModeBackground": "hsl(207, 26%, 17%)",

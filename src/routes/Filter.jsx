@@ -47,7 +47,7 @@ export default function Filter({data,setIsData}) {
        theme={theme}
       />
       <div className="transition-all duration-300 w-1/2 flex flex-col lg:items-end relative h-[40%] lg:h-full">
-        <div className={`transition-all duration-300 ${theme.sbg} ${theme.txt} shadow-lg h-full lg:w-[37%] flex  items-center justify-center lg:rounded-md lg:gap-10 gap-5`}>
+        <div className={`transition-all duration-300 ${theme.sbg} ${theme.txt} shadow-lg h-full lg:w-[37%] w-[60%] flex  items-center justify-center lg:rounded-md lg:gap-10 gap-5`}>
             <p className="text-md">Filter by Region</p>
             <i ref={cavt}  onClick={dropDown} className="fa-solid fa-angle-down" style={{"color": ""}}></i>
         </div>
@@ -71,6 +71,6 @@ function Input({ type, placeholder, data, prevData, isChange, setIsData,theme })
       })
       e.target.value == "" ? setIsData(data2) : setIsData(it)
   }
-    return <input onChange={change}  className={` ${theme.sbg} pl-[12%] lg:pl-[6%] pr-3 lg:h-full h-[35%] lg:w-[40%] w-full placeholder:text-lightModeInput rounded-sm shadow-md ${theme.inp}`} placeholder:text-lg pl-10 type={type} name="" placeholder="Search for a country..."
+    return <input onChange={change}  className={` ${theme.sbg} pl-[12%] lg:pl-[6%] pr-3 lg:h-full h-[35%] lg:w-[40%] w-full placeholder:text-lightModeInput lg:rounded-sm  shadow-md ${theme.inp}`} placeholder:text-lg pl-10 type={type} name="" placeholder="Search for a country..."
     />
 }

@@ -50,12 +50,12 @@ export default function Filter({data,setIsData}) {
             <p className="text-md">Filter by Region</p>
             <i ref={cavt}  onClick={dropDown} className="fa-solid fa-angle-down" style={{"color": ""}}></i>
         </div>
-        <ul ref={dropDownRef} className={`transition-all duration-300 hidden ${theme.sbg} ${theme.txt} lg:w-[36.5%] w-full absolute top-[110%] animate-g rounded-md shadow-sm  flex-col justify-around p-6`}>
-          <li  onClick={filtered}><button>Africa</button></li>
-          <li onClick={filtered}><button>Americas</button></li>
-          <li  onClick={filtered}><button> Asia</button></li>
-          <li  onClick={filtered}><button>Europe</button></li>
-          <li  onClick={filtered}><button>Oceania</button></li>
+        <ul ref={dropDownRef} className={`transition-all duration-300 hidden ${theme.sbg} ${theme.txt} lg:w-[36.5%] w-full absolute top-[110%] rounded-md shadow-sm  flex-col justify-around p-6`}>
+          <li className="transition-all duration-300 hover:bg-lightModeInput/20 p-2"  onClick={filtered}><button>Africa</button></li>
+          <li className="transition-all duration-300 hover:bg-lightModeInput/20 p-2" onClick={filtered}><button>Americas</button></li>
+          <li className="transition-all duration-300 hover:bg-lightModeInput/20 p-2"  onClick={filtered}><button> Asia</button></li>
+          <li className="transition-all duration-300 hover:bg-lightModeInput/20 p-2"  onClick={filtered}><button>Europe</button></li>
+          <li className="transition-all duration-300 hover:bg-lightModeInput/20 p-2"  onClick={filtered}><button>Oceania</button></li>
         </ul>
       </div>
     </div>

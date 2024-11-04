@@ -31,7 +31,7 @@ export default {
             opacity: .5
           },
           "100%": { 
-            height: "200px", 
+            height: "250px", 
             opacity: 1 
           }
         },

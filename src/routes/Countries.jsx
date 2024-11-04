@@ -7,7 +7,7 @@ export default function Countries({data}) {
       <>
        {data.map((item,index) => {
         return(
-          <Link key={item.name} role="listitem" aria-label="Navigate to more information page" className={`transition-all duration-300 w-[80%] mx-auto lg:w-[22%]  h-[400px] ${theme.sbg}`} to={`moreinfos/${index}`} state={{data:data,name:item.name,theme:theme}}>
+          <Link key={item.name}  aria-label="Navigate to more information page" className={`transition-all duration-300 w-[80%] mx-auto lg:w-[22%]  h-[400px] ${theme.sbg}`} to={`moreinfos/${index}`} state={{data:data,name:item.name,theme:theme}}>
             <div className={` h-full pb-5  rounded-md shadow-lg `}>
             <div role="img" aria-label={`${item.name} flag`} style={{backgroundImage:`url(${item.flags.svg})`,backgroundSize:"cover", backgroundPosition:"center", backgroundRepeat:"no-repeat"}} className={`rounded-t-md h-[55%] w-full`}>
             </div>

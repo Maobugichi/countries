@@ -5,11 +5,13 @@ import { ThemeContext } from "./ThemeContext"
 
 
 export default function MoreInfo() {
-
-  useEffect(() => {
-   window.scrollTo(0,0)
-  }, [])
  const location = useLocation()
+
+ useEffect(() => {
+  if (location.pathname.includes("/moreinfos/")) {
+    window.scrollTo(0,0)
+  }
+ }, [location])
  const {theme,setTheme} = useContext(ThemeContext)
  const { state } = location
 

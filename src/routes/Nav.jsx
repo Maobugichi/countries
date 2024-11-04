@@ -25,7 +25,7 @@ export default function Nav() {
   }
 
     return(
-       <nav className={`transition-all duration-300 ease-in fixed top-0 z-10 w-full lg:w-full ${theme.sbg}  shadow-md lg:h-[60px] h-[80px] flex items-center justify-between`}>
+       <nav className={`transition-all duration-300 ease-in fixed top-0 z-10 w-full lg:w-full ${theme.sbg}  shadow-md lg:h-[60px] h-[85px]  flex items-center justify-between`}>
         <div className="w-[90%] mx-auto flex justify-between">
           <h1 className={`lg:text-xl font-bold ${theme.txt}`}>Where in the world?</h1>
          <div className="flex items-center w-1/2 justify-end gap-3">

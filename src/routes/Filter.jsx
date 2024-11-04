@@ -47,7 +47,7 @@ export default function Filter({data,setIsData}) {
       />
       <div className="transition-all duration-300 lg:w-1/2 w-[55%] flex flex-col lg:items-end relative h-[40%] lg:h-full">
         <div className={`transition-all duration-300 ${theme.sbg} ${theme.txt} shadow-lg lg:h-full h-[80%] lg:w-[37%] w-full flex  items-center justify-center lg:rounded-md lg:gap-10 gap-5`}>
-            <p className="text-md">Filter by Region</p>
+            <p className="text-sm">Filter by Region</p>
             <i ref={cavt}  onClick={dropDown} className="fa-solid fa-angle-down" style={{"color": ""}}></i>
         </div>
         <ul ref={dropDownRef} aria-live="status" className={`transition-all duration-300 hidden ${theme.sbg} ${theme.txt} lg:w-[36.5%] w-full absolute top-[110%] rounded-md shadow-sm  flex-col justify-around p-6`}>

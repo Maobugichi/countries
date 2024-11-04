@@ -14,7 +14,7 @@ export default function MoreInfo() {
 
 
   const info = state.data.filter(item => {
-    return item.name.toLowerCase().includes(state.name.toLowerCase())
+    return item.name.toLowerCase() == state.name.toLowerCase()
   })
 
 

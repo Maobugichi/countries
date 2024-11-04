@@ -6,11 +6,8 @@ import { ThemeContext } from "./ThemeContext"
 
 export default function MoreInfo() {
  const location = useLocation()
-
  useEffect(() => {
-  if (location.pathname.includes("/moreinfos/")) {
     window.scrollTo(0,0)
-  }
  }, [location])
  const {theme,setTheme} = useContext(ThemeContext)
  const { state } = location
@@ -26,7 +23,7 @@ export default function MoreInfo() {
        <div key={item.name} className="overflow-x-hidden">
         <Nav/>
        <section className={`transition-all duration-300 ease-in flex flex-col  w-full lg:mx-auto lg:mt-[4.5%]  lg:h-[100vh] h-[130vh] pb-5 mt-[20%] ${theme.sbg}`}>
-        <button className={`lg:ml-[5%] ml-[5%] mt-[5%] mb-10 w-[100px] lg:h-[40px] h-[50px] rounded-md shadow-md ${theme.txt} flex items-center justify-center`}><Link className="w-full flex items-center justify-center gap-3"  to="/"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"></path></svg> back</Link></button>
+        <button className={`lg:ml-[5%] ml-[5%] mt-[5%] mb-10 w-[100px] lg:h-[40px] h-[50px] rounded-md shadow-md ${theme.txt} flex items-center justify-center`}><Link className="w-full flex items-center justify-center gap-3"  to="/"><svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"></path></svg> back</Link></button>
         <div className=" lg:w-[90%] w-full mt-5 mx-auto flex flex-col lg:flex-row  lg:h-[65%] h-[90%] gap-5">
          <img className="lg:w-[40%] w-[90%] mx-auto" src={item.flags.svg} alt={`${item.name} flag`} />
         <div className=" lg:w-[60%] flex w-full   items-center lg:justify-center h-full">
